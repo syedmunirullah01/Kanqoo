@@ -1,0 +1,142 @@
+.embla {
+  max-width: 99rem;
+  margin: auto;
+  --slide-height: 19rem;
+  --slide-spacing: 1rem;
+  --slide-size: 70%;
+}
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  gap: 2.5rem; /* More space between cards */
+  margin-left: 0;
+}
+.embla__slide {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+}
+.embla__slide__img {
+  border-radius: 2rem;
+  display: block;
+  height: 19rem;
+  width: 100%;
+  object-fit: cover;
+  transition: filter 0.3s;
+  filter: brightness(0.98);
+}
+.carousel-card {
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10), 0 1.5px 8px rgba(0,0,0,0.08);
+  background: #fff;
+  transition: 
+    transform 0.5s cubic-bezier(.16,1,.3,1),
+    box-shadow 0.5s cubic-bezier(.16,1,.3,1),
+    opacity 0.3s;
+  opacity: 0.85;
+  will-change: transform, box-shadow, opacity;
+  border: 1px solid #f3f4f6;
+  overflow: hidden;
+}
+.carousel-card.is-selected {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.16), 0 2px 12px rgba(0,0,0,0.10);
+  opacity: 1;
+  z-index: 2;
+}
+.embla__controls {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: space-between;
+  gap: 1.2rem;
+  margin-top: 1.8rem;
+}
+.embla__buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+  align-items: center;
+}
+.embla__button {
+  -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+  width: 3.6rem;
+  height: 3.6rem;
+  z-index: 1;
+  border-radius: 50%;
+  color: var(--text-body);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.embla__button:disabled {
+  color: var(--detail-high-contrast);
+}
+.embla__button__svg {
+  width: 35%;
+  height: 35%;
+}
+.embla__dots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: calc((2.6rem - 1.4rem) / 2 * -1);
+}
+.embla__dot {
+  -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 2.6rem;
+  height: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.embla__dot:after {
+  box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  content: '';
+}
+.embla__dot--selected:after {
+  box-shadow: inset 0 0 0 0.2rem var(--text-body);
+}
+.embla__slide {
+  transition: opacity 0.2s ease-in-out;
+}
+.embla__slide:not(.is-snapped) {
+  opacity: 1;
+}
+
+/* Optional: subtle hover effect for desktop */
+.carousel-card:hover {
+  box-shadow: 0 24px 64px rgba(0,0,0,0.18), 0 4px 16px rgba(0,0,0,0.12);
+  transform: scale(1.10) rotate(-2deg);
+  opacity: 1;
+}
