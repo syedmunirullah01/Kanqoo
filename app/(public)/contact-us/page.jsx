@@ -187,11 +187,9 @@ export default function ContactUs() {
             <div>
               <h3 className="text-xl font-extrabold text-[#0F172A] mb-4">Imprint</h3>
               <p className="text-slate-700 text-sm leading-relaxed">
-                Kanqoo Technologies LLC.<br />
-                <strong>File No:</strong> 805642335<br />
-                <strong>Office of the Secretary of state, Austin Texas</strong><br />
-                <strong>Phone:</strong> +1 (469) 877-1432<br />
-                <strong>Address:</strong> 400 N Coit Rd #1908, Richardson, TX 75080
+                Technochy Pvt Ltd<br />
+                <strong>Phone:</strong> +44 7460 708828<br />
+                <strong>Address:</strong> 2nd Floor College House, 17 King Edwards Road, Ruislip, London, United Kingdom, HA4 7AE
               </p>
             </div>
 
@@ -219,13 +217,13 @@ export default function ContactUs() {
                   { icon: Twitter, href: "https://twitter.com" },
                   { icon: Instagram, href: "https://instagram.com" },
                   { icon: Linkedin, href: "https://linkedin.com" },
-                  { 
+                  {
                     icon: (props) => (
                       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-                        <path d="M12 2C6.477 2 2 6.477 2 12c0 4.17 2.565 7.747 6.22 9.25-.084-.77-.16-1.95.033-2.785.176-.757 1.135-4.815 1.135-4.815s-.29-.58-.29-1.438c0-1.346.78-2.35 1.752-2.35.825 0 1.224.62 1.224 1.363 0 .83-.528 2.07-.8 3.22-.228.962.482 1.747 1.43 1.747 1.716 0 3.036-1.81 3.036-4.42 0-2.312-1.66-3.93-4.035-3.93-2.75 0-4.364 2.062-4.364 4.195 0 .83.32 1.72.72 2.206a.3.3 0 01.07.284c-.078.324-.252 1.026-.286 1.168-.045.186-.148.225-.34.137-1.272-.59-2.066-2.45-2.066-3.937 0-3.208 2.33-6.155 6.72-6.155 3.53 0 6.275 2.516 6.275 5.88 0 3.506-2.21 6.326-5.28 6.326-1.03 0-2.003-.536-2.335-1.168l-.635 2.42c-.23.882-.852 1.986-1.27 2.665C9.742 21.84 10.846 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
+                        <path d="M12 2C6.477 2 2 6.477 2 12c0 4.17 2.565 7.747 6.22 9.25-.084-.77-.16-1.95.033-2.785.176-.757 1.135-4.815 1.135-4.815s-.29-.58-.29-1.438c0-1.346.78-2.35 1.752-2.35.825 0 1.224.62 1.224 1.363 0 .83-.528 2.07-.8 3.22-.228.962.482 1.747 1.43 1.747 1.716 0 3.036-1.81 3.036-4.42 0-2.312-1.66-3.93-4.035-3.93-2.75 0-4.364 2.062-4.364 4.195 0 .83.32 1.72.72 2.206a.3.3 0 01.07.284c-.078.324-.252 1.026-.286 1.168-.045.186-.148.225-.34.137-1.272-.59-2.066-2.45-2.066-3.937 0-3.208 2.33-6.155 6.72-6.155 3.53 0 6.275 2.516 6.275 5.88 0 3.506-2.21 6.326-5.28 6.326-1.03 0-2.003-.536-2.335-1.168l-.635 2.42c-.23.882-.852 1.986-1.27 2.665C9.742 21.84 10.846 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" />
                       </svg>
-                    ), 
-                    href: "https://pinterest.com" 
+                    ),
+                    href: "https://pinterest.com"
                   }
                 ].map((social, idx) => {
                   const Icon = social.icon;
