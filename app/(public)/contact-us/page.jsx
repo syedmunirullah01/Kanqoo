@@ -202,14 +202,6 @@ export default function ContactUs() {
             </div>
 
             <div className="border-t border-slate-100 pt-6">
-              <h4 className="font-bold text-slate-800 text-sm mb-2">Legal</h4>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                legal@kanqoo.com<br />
-                <em className="text-xs text-slate-400 block mt-1">Please contact on this email only for legal purposes.</em>
-              </p>
-            </div>
-
-            <div className="border-t border-slate-100 pt-6">
               <h4 className="font-bold text-slate-800 text-sm mb-3">Socials</h4>
               <div className="flex items-center gap-3">
                 {[
