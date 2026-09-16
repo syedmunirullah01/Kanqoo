@@ -14,7 +14,7 @@ export default function Footer() {
 
     return (
         <footer className="relative bg-gradient-to-b from-[#0c1228] via-[#090d1f] to-[#04060f] text-slate-400 overflow-hidden border-t border-slate-800/60 pt-20 pb-12 text-left">
-            
+
             {/* Subtle grid in background of this section */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none opacity-50 z-0" />
 
@@ -43,147 +43,139 @@ export default function Footer() {
                 ].map((s, idx) => {
                     const SocIcon = s.icon;
                     return (
-                      <a 
-                        key={idx} 
-                        href={s.href}
-                        className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/[0.02] border border-white/5 hover:border-blue-500/50 hover:bg-[#1A2542] hover:text-white transition-all duration-300 text-xs font-bold text-slate-400 uppercase tracking-wider scale-100 active:scale-95"
-                      >
-                        <SocIcon className="w-4 h-4" />
-                        <span>{s.name}</span>
-                      </a>
+                        <a
+                            key={idx}
+                            href={s.href}
+                            className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/[0.02] border border-white/5 hover:border-blue-500/50 hover:bg-[#1A2542] hover:text-white transition-all duration-300 text-xs font-bold text-slate-400 uppercase tracking-wider scale-100 active:scale-95"
+                        >
+                            <SocIcon className="w-4 h-4" />
+                            <span>{s.name}</span>
+                        </a>
                     );
                 })}
             </div>
 
             <div className="relative z-10 container mx-auto px-6 max-w-6xl">
-                
+
                 {/* 4 Columns Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 md:gap-12 items-stretch mb-16">
                     
-                    {/* Column 1: Solutions */}
+                    {/* Column 1: FOR PUBLISHERS */}
                     <div className="lg:col-span-3 space-y-4">
-                        <h4 className="text-sm font-bold text-white uppercase tracking-wider font-unbounded">Solutions</h4>
-                        <ul className="space-y-2 text-xs font-semibold">
+                        <h4 className="text-xs font-bold text-white uppercase tracking-wider font-unbounded">FOR PUBLISHERS</h4>
+                        <ul className="space-y-2.5 text-xs font-semibold">
                             <li>
-                                <a href="/for-brands" className="hover:text-white hover:underline transition-all">
-                                    For Advertisers
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/for-creators" className="hover:text-white hover:underline transition-all">
-                                    For Content Creators & Publishers
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="hover:text-white hover:underline transition-all">
-                                    For Agencies
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="hover:text-white hover:underline transition-all">
-                                    Pricing
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    {/* Column 2: Resources */}
-                    <div className="lg:col-span-3 space-y-4">
-                        <h4 className="text-sm font-bold text-white uppercase tracking-wider font-unbounded">Resources</h4>
-                        <ul className="space-y-2 text-xs font-semibold">
-                            <li>
-                                <a href="#" className="hover:text-white hover:underline transition-all">
-                                    Help Center
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="hover:text-white hover:underline transition-all">
-                                    Advertiser Directory
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="hover:text-white hover:underline transition-all">
-                                    Publisher Tips
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="hover:text-white hover:underline transition-all">
-                                    CMA Guidelines
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="hover:text-white hover:underline transition-all">
-                                    Case Studies
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="hover:text-white hover:underline transition-all">
+                                <a href="/faqs" className="hover:text-white hover:underline transition-all">
                                     FAQs
                                 </a>
                             </li>
+                            <li>
+                                <a href="/creator-tips" className="hover:text-white hover:underline transition-all">
+                                    Creator Tips
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/publisher-guidelines" className="hover:text-white hover:underline transition-all">
+                                    Publisher Guidelines
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/publisher-onboarding" className="hover:text-white hover:underline transition-all">
+                                    Publisher Onboarding
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
-                    {/* Column 3: Company */}
+                    {/* Column 2: COMPANY */}
                     <div className="lg:col-span-3 space-y-4">
-                        <h4 className="text-sm font-bold text-white uppercase tracking-wider font-unbounded">Company</h4>
-                        <ul className="space-y-2 text-xs font-semibold">
+                        <h4 className="text-xs font-bold text-white uppercase tracking-wider font-unbounded">COMPANY</h4>
+                        <ul className="space-y-2.5 text-xs font-semibold">
                             <li>
                                 <a href="/about-us" className="hover:text-white hover:underline transition-all">
-                                    Our Story
+                                    About Us
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-white hover:underline transition-all">
-                                    Careers
+                                <a href="/how-it-works" className="hover:text-white hover:underline transition-all">
+                                    How Kanqoo Works
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-white hover:underline transition-all">
-                                    Newsroom
+                                <a href="/contact-us" className="hover:text-white hover:underline transition-all">
+                                    Contact Us
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-white hover:underline transition-all">
-                                    Sustainability
+                                <a href="/terms-and-conditions" className="hover:text-white hover:underline transition-all">
+                                    Terms & Conditions
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/privacy-policy" className="hover:text-white hover:underline transition-all">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/cookie-policy" className="hover:text-white hover:underline transition-all">
+                                    Cookie Policy
                                 </a>
                             </li>
                         </ul>
                     </div>
 
-                    {/* Column 4: Questions? We're here to help */}
-                    <div className="lg:col-span-3 space-y-5">
-                        <h4 className="text-sm font-bold text-white uppercase tracking-wider font-unbounded">Questions? We're here to help</h4>
-                        <p className="text-xs text-slate-400 leading-relaxed font-semibold">
-                            Reach out to our team for support, guidance, or any information about {siteName}.
-                        </p>
-                        <div>
-                            <a href="/contact-us" className="text-xs font-bold text-blue-500 hover:text-blue-400 hover:underline flex items-center gap-1">
-                                <span>Contact us</span>
-                                <ArrowRight className="w-3.5 h-3.5" />
-                            </a>
-                        </div>
+                    {/* Column 3: RESOURCES */}
+                    <div className="lg:col-span-3 space-y-4">
+                        <h4 className="text-xs font-bold text-white uppercase tracking-wider font-unbounded">RESOURCES</h4>
+                        <ul className="space-y-2.5 text-xs font-semibold">
+                            <li>
+                                <a href="/blogs" className="hover:text-white hover:underline transition-all">
+                                    Blogs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/imprint" className="hover:text-white hover:underline transition-all">
+                                    Imprint
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-
+                    {/* Column 4: COMPLIANCE */}
+                    <div className="lg:col-span-3 space-y-4">
+                        <h4 className="text-xs font-bold text-white uppercase tracking-wider font-unbounded">COMPLIANCE</h4>
+                        <ul className="space-y-2.5 text-xs font-semibold">
+                            <li>
+                                <a href="/compliance-policy" className="hover:text-white hover:underline transition-all">
+                                    Compliance Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/anti-fraud-policy" className="hover:text-white hover:underline transition-all">
+                                    Anti-Fraud Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/traffic-source-policy" className="hover:text-white hover:underline transition-all">
+                                    Traffic Source Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/subnetwork-disclosure" className="hover:text-white hover:underline transition-all">
+                                    Subnetwork Disclosure
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/gdpr-data-transparency" className="hover:text-white hover:underline transition-all">
+                                    GDPR & Data Transparency
+                                </a>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
 
-                {/* Bottom Bar Options Row */}
-                <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-                    
-                    {/* Bottom Links */}
-                    <div className="flex flex-wrap items-center gap-x-6 gap-y-3 text-xs font-semibold text-slate-500">
-                        <a href="/privacy-policy" className="hover:text-white transition-all">Privacy</a>
-                        <a href="/terms-and-conditions" className="hover:text-white transition-all">Publisher Terms</a>
-                        <a href="#" className="hover:text-white transition-all">Compliance</a>
-                        <a href="#" className="hover:text-white transition-all">Site Notice</a>
-                        <a href="#" className="hover:text-white transition-all">Information Security</a>
-                    </div>
 
-
-
-                </div>
 
                 {/* Bottom Bar Legal Disclaimer Text */}
                 <div className="mt-8 text-[10px] text-slate-600 leading-relaxed max-w-5xl font-medium border-t border-white/5 pt-6">

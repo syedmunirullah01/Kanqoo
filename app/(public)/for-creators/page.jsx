@@ -20,7 +20,15 @@ import {
   Mail, 
   Percent, 
   BookOpen, 
-  ArrowUpRight 
+  ArrowUpRight,
+  Bell,
+  Calendar,
+  MousePointer,
+  ShoppingCart,
+  Clock,
+  Trophy,
+  HelpCircle,
+  Wallet
 } from 'lucide-react';
 
 export default function ForInfluencers() {
@@ -213,254 +221,449 @@ export default function ForInfluencers() {
               </div>
             </div>
 
-            {/* Right Side - Interactive Live Dashboard Mockup (trackit. style with kanqoo branding) */}
+            {/* Right Side - Interactive Live Dashboard Mockup (Image 2 design) */}
             <div className="lg:col-span-6 w-full relative">
-              <div className="relative bg-[#f8fafc] rounded-3xl border border-slate-200/80 shadow-[0_20px_50px_rgba(0,0,0,0.06)] overflow-hidden transition-all duration-300 hover:shadow-[0_30px_70px_rgba(0,0,0,0.08)] flex flex-row h-[550px] w-full text-[11px] font-sans">
+              <div className="relative bg-[#f4f9f6] rounded-3xl border border-emerald-100/80 shadow-[0_20px_50px_rgba(0,0,0,0.06)] overflow-hidden transition-all duration-300 hover:shadow-[0_30px_70px_rgba(16,185,129,0.08)] flex flex-col h-[600px] w-full text-[10px] font-sans">
                 
-                {/* 1. Left Sidebar Mockup */}
-                <div className="w-44 bg-slate-50 border-r border-slate-200/60 p-4 flex flex-col justify-between shrink-0 hidden md:flex">
-                  <div>
-                    {/* Logo Section */}
-                    <div className="flex items-center gap-2 mb-6">
-                      <span className="text-sm font-bold text-slate-800 font-unbounded tracking-tight lowercase">
-                        kanqoo
-                      </span>
-                    </div>
-
-                    {/* Search Mockup */}
-                    <div className="bg-white border border-slate-200 rounded-lg px-2.5 py-1 mb-4 flex items-center justify-between text-slate-400 text-[10px]">
-                      <span>Search...</span>
-                      <span className="text-[9px] border border-slate-200 px-1 py-0.2 rounded bg-slate-50">⌘K</span>
-                    </div>
-
-                    {/* Navigation Links */}
-                    <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest block mb-2 px-1">Dashboard</span>
-                    <nav className="space-y-1">
-                      <div className="flex items-center gap-2 bg-blue-50 border border-blue-100 text-blue-700 rounded-lg px-2.5 py-1.5 text-xs font-semibold cursor-pointer">
-                        <Activity className="w-3.5 h-3.5 shrink-0" />
-                        <span>Dashboard</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-slate-600 hover:bg-slate-100 rounded-lg px-2.5 py-1.5 text-xs cursor-pointer transition-colors">
-                        <Globe className="w-3.5 h-3.5 shrink-0" />
-                        <span>Marketplace</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-slate-600 hover:bg-slate-100 rounded-lg px-2.5 py-1.5 text-xs cursor-pointer transition-colors">
-                        <Users className="w-3.5 h-3.5 shrink-0" />
-                        <span>Affiliates</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-slate-600 hover:bg-slate-100 rounded-lg px-2.5 py-1.5 text-xs cursor-pointer transition-colors">
-                        <Target className="w-3.5 h-3.5 shrink-0" />
-                        <span>Campaigns</span>
-                      </div>
-                    </nav>
-
-                    {/* Settings Links */}
-                    <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest block mt-5 mb-2 px-1">Settings</span>
-                    <nav className="space-y-1">
-                      <div className="flex items-center gap-2 text-slate-600 hover:bg-slate-100 rounded-lg px-2.5 py-1.5 text-xs cursor-pointer transition-colors">
-                        <span className="w-1.5 h-1.5 rounded-full bg-slate-400 shrink-0" />
-                        <span>Integrations</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-slate-600 hover:bg-slate-100 rounded-lg px-2.5 py-1.5 text-xs cursor-pointer transition-colors">
-                        <span className="w-1.5 h-1.5 rounded-full bg-slate-400 shrink-0" />
-                        <span>Postbacks</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-slate-600 hover:bg-slate-100 rounded-lg px-2.5 py-1.5 text-xs cursor-pointer transition-colors">
-                        <span className="w-1.5 h-1.5 rounded-full bg-slate-400 shrink-0" />
-                        <span>API Keys</span>
-                      </div>
+                {/* 1. Top Navigation Bar */}
+                <div className="bg-white border-b border-emerald-100/60 px-4 py-2.5 flex items-center justify-between shrink-0">
+                  <div className="flex items-center gap-6">
+                    <span className="text-sm font-extrabold text-slate-900 tracking-tight lowercase">KanQoo</span>
+                    <nav className="flex items-center gap-4 text-[11px] font-medium text-slate-500">
+                      <span className="text-emerald-600 font-bold border-b-2 border-emerald-500 pb-0.5 cursor-pointer">Dashboard</span>
+                      <span className="hover:text-slate-800 cursor-pointer">Offers</span>
+                      <span className="hover:text-slate-800 cursor-pointer">Reports</span>
+                      <span className="hover:text-slate-800 cursor-pointer">Payouts</span>
+                      <span className="hover:text-slate-800 cursor-pointer">Settings</span>
                     </nav>
                   </div>
-
-                  {/* Bottom Premium Card */}
-                  <div className="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 rounded-2xl p-3 text-center">
-                    <span className="text-[9px] font-bold text-blue-700 uppercase tracking-wider block">Upgrade to Pro</span>
-                    <p className="text-[9px] text-slate-500 mt-1 leading-normal">Access custom analytics and postbacks</p>
-                    <button className="w-full mt-2.5 py-1.5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-[9px] font-bold shadow-sm transition-colors">
-                      Upgrade Plan
-                    </button>
+                  <div className="flex items-center gap-3">
+                    <div className="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 cursor-pointer">
+                      <Bell className="w-3.5 h-3.5" />
+                    </div>
+                    <div className="w-6.5 h-6.5 rounded-full bg-emerald-500 text-white font-bold flex items-center justify-center text-[10px] shadow-sm">
+                      P
+                    </div>
                   </div>
                 </div>
 
-                {/* 2. Right Main Dashboard Content */}
-                <div className="flex-1 bg-white p-4 flex flex-col justify-between overflow-y-auto min-w-0">
+                {/* Scrollable Dashboard Body */}
+                <div className="flex-1 p-3.5 overflow-y-auto space-y-3">
                   
-                  {/* Top Header Mockup */}
-                  <div className="flex items-center justify-between pb-3 border-b border-slate-100 mb-4 shrink-0">
-                    {/* User profile identifier */}
-                    <div className="flex items-center gap-2">
-                      <div className="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center text-[10px] font-bold text-blue-700">OO</div>
+                  {/* 2. Welcome Banner & Active Pill */}
+                  <div className="flex items-start justify-between bg-gradient-to-r from-emerald-50/80 via-white to-emerald-50/40 p-3 rounded-2xl border border-emerald-100/60">
+                    <div className="flex items-start gap-2.5">
+                      <div className="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">
+                        <Wallet className="w-4 h-4" />
+                      </div>
                       <div>
-                        <p className="text-[10px] font-bold text-slate-800 leading-tight">OO Campaign</p>
-                        <p className="text-[8px] text-slate-400 leading-none">Distributor/Admin</p>
+                        <h3 className="text-xs font-bold text-slate-900 leading-tight">Publisher Dashboard</h3>
+                        <p className="text-[9px] text-slate-500 mt-0.5 max-w-sm">Welcome back, Publisher! Track your performance, view your earnings and grow your income with KanQoo.</p>
                       </div>
                     </div>
-                    {/* Header action controls */}
-                    <div className="flex items-center gap-2">
-                      {/* Dark/light toggles */}
-                      <div className="flex items-center bg-slate-100 rounded-lg p-0.5 border border-slate-200/60">
-                        <span className="w-4 h-4 rounded bg-white flex items-center justify-center shadow-sm text-[9px]">☀️</span>
-                        <span className="text-[9px] px-1 opacity-40">🌙</span>
+                    <div className="flex items-center gap-2 shrink-0">
+                      <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-100/80 text-emerald-700 font-bold text-[9px]">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                        You're Active
+                      </span>
+                      <div className="flex items-center gap-1 bg-white border border-slate-200 px-2 py-1 rounded-lg text-[9px] text-slate-600 font-medium">
+                        <Calendar className="w-3 h-3 text-slate-400" />
+                        <span>Last 7 Days</span>
+                        <ChevronDown className="w-2.5 h-2.5 text-slate-400" />
                       </div>
-                      <button className="px-2.5 py-1.5 bg-blue-600 text-white font-bold rounded-lg text-[9px] hover:bg-blue-700 transition-colors shadow-sm">
-                        + Start Campaign
-                      </button>
                     </div>
                   </div>
 
-                  {/* Reports Heading */}
-                  <div className="mb-4 shrink-0">
-                    <h2 className="text-sm font-bold text-slate-800 tracking-tight leading-tight">Reports/Analytics</h2>
-                    <p className="text-[9px] text-slate-400 mt-0.5">Get a clear snapshot of your affiliate program performance.</p>
+                  {/* 3. Top 4 KPI Cards Grid */}
+                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5">
+                    {/* Total Earnings */}
+                    <div className="bg-white p-3 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                      <div className="w-7 h-7 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mb-1.5">
+                        <DollarSign className="w-3.5 h-3.5" />
+                      </div>
+                      <div>
+                        <span className="text-[8px] font-bold text-slate-400 uppercase tracking-wider block">Total Earnings</span>
+                        <span className="text-sm font-extrabold text-slate-900 font-sans">$482.36</span>
+                      </div>
+                      <div className="text-[8px] font-semibold text-emerald-600 mt-1 flex items-center gap-0.5">
+                        <span>▲ +24.5%</span>
+                        <span className="text-slate-400 font-normal">vs. previous 7 days</span>
+                      </div>
+                    </div>
+
+                    {/* Total Clicks */}
+                    <div className="bg-white p-3 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                      <div className="w-7 h-7 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center mb-1.5">
+                        <MousePointer className="w-3.5 h-3.5" />
+                      </div>
+                      <div>
+                        <span className="text-[8px] font-bold text-slate-400 uppercase tracking-wider block">Total Clicks</span>
+                        <span className="text-sm font-extrabold text-slate-900 font-sans">3,892</span>
+                      </div>
+                      <div className="text-[8px] font-semibold text-emerald-600 mt-1 flex items-center gap-0.5">
+                        <span>▲ +18.2%</span>
+                        <span className="text-slate-400 font-normal">vs. previous 7 days</span>
+                      </div>
+                    </div>
+
+                    {/* Total Conversions */}
+                    <div className="bg-white p-3 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                      <div className="w-7 h-7 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center mb-1.5">
+                        <Target className="w-3.5 h-3.5" />
+                      </div>
+                      <div>
+                        <span className="text-[8px] font-bold text-slate-400 uppercase tracking-wider block">Total Conversions</span>
+                        <span className="text-sm font-extrabold text-slate-900 font-sans">215</span>
+                      </div>
+                      <div className="text-[8px] font-semibold text-emerald-600 mt-1 flex items-center gap-0.5">
+                        <span>▲ +27.9%</span>
+                        <span className="text-slate-400 font-normal">vs. previous 7 days</span>
+                      </div>
+                    </div>
+
+                    {/* Active Campaigns */}
+                    <div className="bg-white p-3 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                      <div className="w-7 h-7 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mb-1.5">
+                        <Users className="w-3.5 h-3.5" />
+                      </div>
+                      <div>
+                        <span className="text-[8px] font-bold text-slate-400 uppercase tracking-wider block">Active Campaigns</span>
+                        <span className="text-sm font-extrabold text-slate-900 font-sans">5</span>
+                      </div>
+                      <div className="text-[8px] font-semibold text-emerald-600 mt-1">
+                        +2 new this week
+                      </div>
+                    </div>
                   </div>
 
-                  {/* Middle Section - Two Cards */}
-                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 mb-3 shrink-0">
+                  {/* 4. Secondary Stat Row (2 Cards) */}
+                  <div className="grid grid-cols-2 gap-2.5">
+                    <div className="bg-white p-3 rounded-2xl border border-slate-100 shadow-sm flex items-center gap-3">
+                      <div className="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+                        <Activity className="w-3.5 h-3.5" />
+                      </div>
+                      <div>
+                        <span className="text-[8px] font-bold text-slate-400 uppercase tracking-wider block">Conversion Rate</span>
+                        <div className="flex items-baseline gap-1.5">
+                          <span className="text-xs font-bold text-slate-900">5.52%</span>
+                          <span className="text-[8px] text-emerald-600 font-medium">▲ +0.8% vs. previous 7 days</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-white p-3 rounded-2xl border border-slate-100 shadow-sm flex items-center gap-3">
+                      <div className="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+                        <Wallet className="w-3.5 h-3.5" />
+                      </div>
+                      <div>
+                        <span className="text-[8px] font-bold text-slate-400 uppercase tracking-wider block">Available Balance</span>
+                        <div className="flex items-baseline gap-2">
+                          <span className="text-xs font-bold text-slate-900">$216.48</span>
+                          <span className="text-[8px] text-slate-400 font-medium">Pending: $125.30</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 5. Main 2-Column Section */}
+                  <div className="grid grid-cols-1 lg:grid-cols-12 gap-2.5">
                     
-                    {/* Large Performance Chart Card (Left 2 cols) */}
-                    <div className="lg:col-span-2 bg-slate-50/50 border border-slate-200/60 rounded-2xl p-3 flex flex-col justify-between">
-                      <div className="flex items-center justify-between mb-3 shrink-0">
-                        <div>
-                          <span className="text-[8px] font-bold text-slate-400 uppercase tracking-wide">Performance Overview</span>
-                          <div className="flex items-baseline gap-1 mt-0.5">
-                            <span className="text-sm font-bold text-slate-850 font-sans">$48,703.00</span>
-                            <span className="text-[8px] font-bold text-green-600 bg-green-50 border border-green-100 rounded px-1 py-0.2">+22.57%</span>
+                    {/* Left 8 Columns */}
+                    <div className="lg:col-span-8 space-y-2.5">
+                      
+                      {/* Earnings Overview Bar Chart Card */}
+                      <div className="bg-white p-3 rounded-2xl border border-slate-100 shadow-sm">
+                        <div className="flex items-center justify-between mb-3">
+                          <div className="flex items-center gap-2">
+                            <TrendingUp className="w-3.5 h-3.5 text-slate-500" />
+                            <div>
+                              <h4 className="text-xs font-bold text-slate-800 leading-none">Earnings Overview</h4>
+                              <p className="text-[8px] text-slate-400 mt-0.5">Your earnings for the last 7 days</p>
+                            </div>
+                          </div>
+                          <span className="px-2 py-0.5 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-700 font-bold text-[8px]">
+                            Total Earnings: $482.36
+                          </span>
+                        </div>
+
+                        {/* Custom SVG Bar Chart matching Image 2 */}
+                        <div className="h-32 w-full pt-2 pb-1 relative">
+                          <div className="absolute left-0 top-0 bottom-6 w-6 flex flex-col justify-between text-[7px] text-slate-400">
+                            <span>$200</span>
+                            <span>$150</span>
+                            <span>$100</span>
+                            <span>$50</span>
+                            <span>$0</span>
+                          </div>
+                          <div className="ml-7 h-full flex flex-col justify-between">
+                            <div className="flex-1 flex items-end justify-between gap-2 border-b border-slate-100 pb-1">
+                              {[
+                                { day: 'Apr 25', val: 70, height: '40%' },
+                                { day: 'Apr 26', val: 110, height: '60%' },
+                                { day: 'Apr 27', val: 90, height: '50%' },
+                                { day: 'Apr 28', val: 120, height: '65%' },
+                                { day: 'Apr 29', val: 160, height: '85%' },
+                                { day: 'Apr 30', val: 140, height: '75%' },
+                                { day: 'May 1', val: 130, height: '70%' },
+                              ].map((bar, i) => (
+                                <div key={i} className="flex-1 flex flex-col items-center h-full justify-end group">
+                                  <div 
+                                    className="w-full bg-emerald-400 hover:bg-emerald-500 rounded-t-md transition-all duration-200" 
+                                    style={{ height: bar.height }}
+                                  />
+                                </div>
+                              ))}
+                            </div>
+                            <div className="flex items-center justify-between text-[7px] font-medium text-slate-400 pt-1">
+                              <span>Apr 25</span>
+                              <span>Apr 26</span>
+                              <span>Apr 27</span>
+                              <span>Apr 28</span>
+                              <span>Apr 29</span>
+                              <span>Apr 30</span>
+                              <span>May 1</span>
+                            </div>
                           </div>
                         </div>
-                        <div className="border border-slate-200 rounded px-1.5 py-0.5 text-[8px] text-slate-500 bg-white">
-                          Last 28 Days
+
+                        {/* Bottom 3 Pills */}
+                        <div className="grid grid-cols-3 gap-1.5 mt-2 pt-2 border-t border-slate-100">
+                          <div className="bg-purple-50/60 rounded-lg p-1.5 flex items-center gap-1.5">
+                            <div className="w-4 h-4 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center shrink-0">
+                              <DollarSign className="w-2.5 h-2.5" />
+                            </div>
+                            <div>
+                              <div className="text-[9px] font-bold text-slate-800">$482.36</div>
+                              <div className="text-[7px] text-slate-400 leading-none">Total Earnings</div>
+                            </div>
+                          </div>
+
+                          <div className="bg-blue-50/60 rounded-lg p-1.5 flex items-center gap-1.5">
+                            <div className="w-4 h-4 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shrink-0">
+                              <Target className="w-2.5 h-2.5" />
+                            </div>
+                            <div>
+                              <div className="text-[9px] font-bold text-slate-800">215</div>
+                              <div className="text-[7px] text-slate-400 leading-none">Conversions</div>
+                            </div>
+                          </div>
+
+                          <div className="bg-emerald-50/60 rounded-lg p-1.5 flex items-center gap-1.5">
+                            <div className="w-4 h-4 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+                              <Activity className="w-2.5 h-2.5" />
+                            </div>
+                            <div>
+                              <div className="text-[9px] font-bold text-slate-800">5.52%</div>
+                              <div className="text-[7px] text-slate-400 leading-none">Conversion Rate</div>
+                            </div>
+                          </div>
                         </div>
                       </div>
+
+                      {/* Recent Conversions Card */}
+                      <div className="bg-white p-3 rounded-2xl border border-slate-100 shadow-sm">
+                        <div className="flex items-center justify-between mb-2">
+                          <div className="flex items-center gap-2">
+                            <ShoppingCart className="w-3.5 h-3.5 text-slate-500" />
+                            <div>
+                              <h4 className="text-xs font-bold text-slate-800 leading-none">Recent Conversions</h4>
+                              <p className="text-[8px] text-slate-400 mt-0.5">Latest confirmed transactions</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="overflow-x-auto">
+                          <table className="w-full text-left text-[8px]">
+                            <thead>
+                              <tr className="border-b border-slate-100 text-slate-400 font-semibold">
+                                <th className="pb-1.5 font-medium">Date</th>
+                                <th className="pb-1.5 font-medium">Merchant</th>
+                                <th className="pb-1.5 font-medium">Commission</th>
+                                <th className="pb-1.5 font-medium text-right">Status</th>
+                              </tr>
+                            </thead>
+                            <tbody className="divide-y divide-slate-50 text-slate-700">
+                              {[
+                                { date: 'May 1, 2025 14:32', merchant: 'Nike', comm: '$24.50' },
+                                { date: 'May 1, 2025 12:17', merchant: 'Amazon', comm: '$18.32' },
+                                { date: 'May 1, 2025 09:45', merchant: 'Shein', comm: '$12.80' },
+                                { date: 'Apr 30, 2025 22:11', merchant: 'AliExpress', comm: '$9.40' },
+                                { date: 'Apr 30, 2025 18:03', merchant: 'Banggood', comm: '$7.25' },
+                              ].map((row, idx) => (
+                                <tr key={idx} className="hover:bg-slate-50/60 transition-colors">
+                                  <td className="py-1.5 text-slate-500">{row.date}</td>
+                                  <td className="py-1.5 font-semibold text-slate-800">{row.merchant}</td>
+                                  <td className="py-1.5 font-bold text-slate-900">{row.comm}</td>
+                                  <td className="py-1.5 text-right">
+                                    <span className="px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-700 font-bold text-[7px]">Confirmed</span>
+                                  </td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+
+                        <div className="mt-2 pt-1.5 border-t border-slate-100">
+                          <span className="text-[8px] font-bold text-emerald-600 hover:underline cursor-pointer flex items-center gap-1">
+                            View All Conversions →
+                          </span>
+                        </div>
+                      </div>
+
+                      {/* Earnings History Card */}
+                      <div className="bg-white p-3 rounded-2xl border border-slate-100 shadow-sm">
+                        <div className="flex items-center justify-between mb-2">
+                          <div className="flex items-center gap-2">
+                            <Clock className="w-3.5 h-3.5 text-slate-500" />
+                            <div>
+                              <h4 className="text-xs font-bold text-slate-800 leading-none">Earnings History</h4>
+                              <p className="text-[8px] text-slate-400 mt-0.5">All your earnings transactions</p>
+                            </div>
+                          </div>
+                          <span className="text-[8px] font-bold text-slate-500 border border-slate-200 px-1.5 py-0.5 rounded hover:bg-slate-50 cursor-pointer">
+                            View All →
+                          </span>
+                        </div>
+
+                        <div className="overflow-x-auto">
+                          <table className="w-full text-left text-[8px]">
+                            <thead>
+                              <tr className="border-b border-slate-100 text-slate-400 font-semibold">
+                                <th className="pb-1.5 font-medium">Date</th>
+                                <th className="pb-1.5 font-medium">Description</th>
+                                <th className="pb-1.5 font-medium">Merchant</th>
+                                <th className="pb-1.5 font-medium">Commission</th>
+                                <th className="pb-1.5 font-medium text-right">Status</th>
+                              </tr>
+                            </thead>
+                            <tbody className="divide-y divide-slate-50 text-slate-700">
+                              {[
+                                { date: 'May 1, 2025', desc: 'Sale Commission', merchant: 'Nike', comm: '$24.50' },
+                                { date: 'Apr 30, 2025', desc: 'Sale Commission', merchant: 'Amazon', comm: '$18.32' },
+                                { date: 'Apr 29, 2025', desc: 'Sale Commission', merchant: 'Shein', comm: '$12.80' },
+                                { date: 'Apr 28, 2025', desc: 'Sale Commission', merchant: 'AliExpress', comm: '$9.40' },
+                                { date: 'Apr 27, 2025', desc: 'Sale Commission', merchant: 'Banggood', comm: '$7.25' },
+                              ].map((row, idx) => (
+                                <tr key={idx} className="hover:bg-slate-50/60 transition-colors">
+                                  <td className="py-1.5 text-slate-500">{row.date}</td>
+                                  <td className="py-1.5 text-slate-600">{row.desc}</td>
+                                  <td className="py-1.5 font-semibold text-slate-800">{row.merchant}</td>
+                                  <td className="py-1.5 font-bold text-slate-900">{row.comm}</td>
+                                  <td className="py-1.5 text-right">
+                                    <span className="px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-700 font-bold text-[7px]">Confirmed</span>
+                                  </td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    {/* Right 4 Columns */}
+                    <div className="lg:col-span-4 space-y-2.5">
                       
-                      {/* Spline line chart SVG */}
-                      <div className="h-28 w-full relative">
-                        <svg className="w-full h-full" viewBox="0 0 100 40" preserveAspectRatio="none">
-                          <defs>
-                            <linearGradient id="purpleGradient" x1="0" y1="0" x2="0" y2="1">
-                              <stop offset="0%" stopColor="#8b5cf6" stopOpacity="0.15" />
-                              <stop offset="100%" stopColor="#8b5cf6" stopOpacity="0.0" />
-                            </linearGradient>
-                          </defs>
-                          {/* Grid lines */}
-                          <line x1="0" y1="10" x2="100" y2="10" stroke="#f1f5f9" strokeWidth="0.5" />
-                          <line x1="0" y1="20" x2="100" y2="20" stroke="#f1f5f9" strokeWidth="0.5" />
-                          <line x1="0" y1="30" x2="100" y2="30" stroke="#f1f5f9" strokeWidth="0.5" />
-                          
-                          {/* Shading */}
-                          <path 
-                            d="M 0 30 Q 12 10 25 24 T 50 8 T 75 28 T 100 15 L 100 40 L 0 40 Z" 
-                            fill="url(#purpleGradient)" 
-                          />
-                          
-                          {/* Line */}
-                          <path 
-                            d="M 0 30 Q 12 10 25 24 T 50 8 T 75 28 T 100 15" 
-                            fill="transparent" 
-                            stroke="#8b5cf6" 
-                            strokeWidth="1.5" 
-                            strokeLinecap="round"
-                          />
-                        </svg>
-                        
-                        {/* Interactive Tooltip Overlay */}
-                        <div className="absolute top-2 left-[50%] bg-slate-900 text-white rounded px-1.5 py-0.5 text-[7px] shadow border border-slate-800 flex flex-col pointer-events-none">
-                          <span className="opacity-60 text-[5px]">84:27</span>
-                          <span className="font-bold">$4,850.00</span>
+                      {/* Top Performing Merchants Card */}
+                      <div className="bg-white p-3 rounded-2xl border border-slate-100 shadow-sm">
+                        <div className="flex items-center gap-2 mb-3">
+                          <Trophy className="w-3.5 h-3.5 text-slate-500" />
+                          <div>
+                            <h4 className="text-xs font-bold text-slate-800 leading-none">Top Performing Merchants</h4>
+                            <p className="text-[8px] text-slate-400 mt-0.5">Based on earnings (last 7 days)</p>
+                          </div>
+                        </div>
+
+                        <div className="space-y-2">
+                          {[
+                            { rank: 1, name: 'Nike', iconBg: 'bg-black text-white font-black', iconText: '✓', val: '$162.48', pct: '33.7%' },
+                            { rank: 2, name: 'Amazon', iconBg: 'bg-amber-100 text-amber-900 font-bold', iconText: 'a', val: '$118.32', pct: '24.5%' },
+                            { rank: 3, name: 'Shein', iconBg: 'bg-black text-white font-bold', iconText: 'S', val: '$74.20', pct: '15.4%' },
+                            { rank: 4, name: 'AliExpress', iconBg: 'bg-red-500 text-white font-bold', iconText: 'Ali', val: '$56.18', pct: '11.6%' },
+                            { rank: 5, name: 'Banggood', iconBg: 'bg-orange-500 text-white font-bold', iconText: 'BG', val: '$41.28', pct: '8.6%' },
+                          ].map((m) => (
+                            <div key={m.rank} className="flex items-center justify-between p-1.5 rounded-xl hover:bg-slate-50 transition-colors">
+                              <div className="flex items-center gap-2">
+                                <span className="text-[8px] font-bold text-slate-400 w-2.5">{m.rank}</span>
+                                <div className={`w-5 h-5 rounded-md ${m.iconBg} flex items-center justify-center text-[7px] shrink-0`}>
+                                  {m.iconText}
+                                </div>
+                                <span className="text-[9px] font-bold text-slate-800">{m.name}</span>
+                              </div>
+                              <div className="text-right">
+                                <div className="text-[9px] font-bold text-slate-900">{m.val}</div>
+                                <div className="text-[7px] text-emerald-600 font-semibold">{m.pct} ▲</div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+
+                        <div className="mt-2.5 pt-2 border-t border-slate-100">
+                          <span className="text-[8px] font-bold text-slate-600 hover:text-emerald-600 cursor-pointer flex items-center gap-1">
+                            View All Merchants →
+                          </span>
                         </div>
                       </div>
 
-                      <div className="flex items-center justify-between text-[7px] font-bold text-slate-400 mt-2 shrink-0">
-                        <span>05/12</span>
-                        <span>18/21</span>
-                        <span>25/27</span>
-                        <span>30/04</span>
-                        <span>03/13</span>
-                      </div>
-                    </div>
+                      {/* Need Help? Card */}
+                      <div className="bg-white p-3 rounded-2xl border border-slate-100 shadow-sm space-y-2">
+                        <div className="flex items-center gap-2">
+                          <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center">
+                            <HelpCircle className="w-3 h-3" />
+                          </div>
+                          <div>
+                            <h4 className="text-xs font-bold text-slate-800 leading-none">Need Help?</h4>
+                            <p className="text-[8px] text-slate-400 mt-0.5">Have feedback?</p>
+                          </div>
+                        </div>
 
-                    {/* Donut Chart Card (Right 1 col) */}
-                    <div className="bg-slate-50/50 border border-slate-200/60 rounded-2xl p-3 flex flex-col justify-between items-center text-center">
-                      <div className="w-full text-left mb-2 shrink-0">
-                        <span className="text-[8px] font-bold text-slate-400 uppercase tracking-wide">Discount Campaign</span>
-                        <p className="text-sm font-bold text-slate-800 font-sans mt-0.5">$8,045.00</p>
+                        <div className="bg-emerald-50/50 border border-emerald-100 rounded-xl p-2 text-[8px] text-slate-600 leading-relaxed">
+                          We're always improving the dashboard. Share a feature request, report an issue, or tell us what would make your workflow better.
+                        </div>
+
+                        <button className="w-full py-1.5 bg-white border border-slate-200 hover:bg-slate-50 rounded-lg text-[8px] font-bold text-slate-700 flex items-center justify-center gap-1 transition-colors">
+                          <Mail className="w-3 h-3 text-slate-400" />
+                          Contact us
+                        </button>
                       </div>
 
-                      {/* Donut Graphic */}
-                      <div className="relative w-16 h-16 flex items-center justify-center">
-                        <svg className="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
-                          <circle cx="18" cy="18" r="15.9" fill="none" stroke="#e2e8f0" strokeWidth="2.8" />
-                          <circle cx="18" cy="18" r="15.9" fill="none" stroke="#3b82f6" strokeWidth="3.2" strokeDasharray="50 100" strokeDashoffset="0" />
-                          <circle cx="18" cy="18" r="15.9" fill="none" stroke="#a855f7" strokeWidth="3.2" strokeDasharray="34 100" strokeDashoffset="-50" />
-                        </svg>
-                        <div className="absolute flex flex-col items-center">
-                          <span className="text-[10px] font-bold text-slate-855">84%</span>
+                      {/* Payout Schedule Card */}
+                      <div className="bg-white p-3 rounded-2xl border border-slate-100 shadow-sm space-y-2.5">
+                        <div className="flex items-center gap-2">
+                          <Calendar className="w-3.5 h-3.5 text-slate-500" />
+                          <div>
+                            <h4 className="text-xs font-bold text-slate-800 leading-none">Payout Schedule</h4>
+                            <p className="text-[8px] text-slate-400 mt-0.5">Your upcoming payments</p>
+                          </div>
+                        </div>
+
+                        <div className="bg-emerald-50/40 border border-emerald-100/80 rounded-xl p-2.5 space-y-1">
+                          <div className="flex items-center justify-between">
+                            <span className="text-[8px] text-slate-500">Pending Balance</span>
+                            <span className="px-1.5 py-0.2 rounded bg-emerald-100 text-emerald-700 font-bold text-[7px]">Processing</span>
+                          </div>
+                          <div className="text-xs font-extrabold text-emerald-700">$125.30</div>
+                          <p className="text-[7px] text-slate-400">Expected by May 5, 2025</p>
+                        </div>
+
+                        <div className="bg-amber-50/40 border border-amber-100/80 rounded-xl p-2.5 space-y-1">
+                          <div className="flex items-center justify-between">
+                            <span className="text-[8px] text-slate-500">Next Payout</span>
+                            <span className="px-1.5 py-0.2 rounded bg-amber-100 text-amber-800 font-bold text-[7px]">Scheduled</span>
+                          </div>
+                          <div className="text-xs font-extrabold text-amber-700">$216.48</div>
+                          <p className="text-[7px] text-slate-400">May 12, 2025</p>
+                        </div>
+
+                        <div className="pt-1 border-t border-slate-100">
+                          <span className="text-[8px] font-bold text-slate-600 hover:text-emerald-600 cursor-pointer flex items-center gap-1">
+                            View Payouts →
+                          </span>
                         </div>
                       </div>
 
-                      <div className="grid grid-cols-2 gap-1.5 w-full mt-2 text-[7px] text-slate-500 font-bold shrink-0">
-                        <div className="flex items-center gap-0.5">
-                          <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-                          <span>Direct</span>
-                        </div>
-                        <div className="flex items-center gap-0.5">
-                          <span className="w-1.5 h-1.5 rounded-full bg-purple-500" />
-                          <span>Referral</span>
-                        </div>
-                      </div>
                     </div>
 
-                  </div>
-
-                  {/* Bottom Row - 4 Mini Stats Cards */}
-                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 shrink-0">
-                    {/* Card 1 */}
-                    <div className="bg-slate-50/50 border border-slate-200/40 rounded-xl p-2 flex flex-col justify-between">
-                      <div>
-                        <span className="text-[7px] font-bold text-slate-400 uppercase tracking-wide">Registrations</span>
-                        <p className="text-xs font-bold text-slate-800 mt-0.5">$29.9K</p>
-                      </div>
-                      <div className="h-4 w-full mt-1.5">
-                        <svg className="w-full h-full" viewBox="0 0 30 10" preserveAspectRatio="none">
-                          <path d="M 0 8 Q 5 2 10 7 T 20 4 T 30 1" fill="transparent" stroke="#10b981" strokeWidth="0.8" />
-                        </svg>
-                      </div>
-                    </div>
-                    {/* Card 2 */}
-                    <div className="bg-slate-50/50 border border-slate-200/40 rounded-xl p-2 flex flex-col justify-between">
-                      <div>
-                        <span className="text-[7px] font-bold text-slate-400 uppercase tracking-wide">Partners</span>
-                        <p className="text-xs font-bold text-slate-800 mt-0.5">7,834</p>
-                      </div>
-                      <div className="h-4 w-full mt-1.5">
-                        <svg className="w-full h-full" viewBox="0 0 30 10" preserveAspectRatio="none">
-                          <path d="M 0 5 Q 5 9 10 3 T 20 7 T 30 3" fill="transparent" stroke="#ef4444" strokeWidth="0.8" />
-                        </svg>
-                      </div>
-                    </div>
-                    {/* Card 3 */}
-                    <div className="bg-slate-50/50 border border-slate-200/40 rounded-xl p-2 flex flex-col justify-between">
-                      <div>
-                        <span className="text-[7px] font-bold text-slate-400 uppercase tracking-wide">Payouts</span>
-                        <p className="text-xs font-bold text-slate-800 mt-0.5">$82,802</p>
-                      </div>
-                      <div className="h-4 w-full mt-1.5">
-                        <svg className="w-full h-full" viewBox="0 0 30 10" preserveAspectRatio="none">
-                          <path d="M 0 9 Q 8 1 15 6 T 30 2" fill="transparent" stroke="#3b82f6" strokeWidth="0.8" />
-                        </svg>
-                      </div>
-                    </div>
-                    {/* Card 4 */}
-                    <div className="bg-slate-50/50 border border-slate-200/40 rounded-xl p-2 flex flex-col justify-between">
-                      <div>
-                        <span className="text-[7px] font-bold text-slate-400 uppercase tracking-wide">Conversions</span>
-                        <p className="text-xs font-bold text-slate-800 mt-0.5">$89.9K</p>
-                      </div>
-                      <div className="h-4 w-full mt-1.5">
-                        <svg className="w-full h-full" viewBox="0 0 30 10" preserveAspectRatio="none">
-                          <path d="M 0 3 Q 10 9 20 2 T 30 8" fill="transparent" stroke="#8b5cf6" strokeWidth="0.8" />
-                        </svg>
-                      </div>
-                    </div>
                   </div>
 
                 </div>
