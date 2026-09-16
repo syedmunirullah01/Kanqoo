@@ -675,39 +675,69 @@ export default function ForInfluencers() {
         </div>
       </section>
 
-      {/* Brand Logos Infinite Marquee */}
-      <section className="py-12 border-y border-slate-200 bg-white/40 overflow-hidden relative z-10">
+      {/* Brand Logos Infinite Marquee Ticker (Same as Home Page) */}
+      <section className="py-12 border-y border-slate-200 bg-white/60 overflow-hidden relative z-10">
         <div className="max-w-7xl mx-auto px-6 text-center mb-6">
-          <p className="text-[11px] font-bold text-slate-400 uppercase tracking-widest">
-            Trusted by top global publishers and brands worldwide
+          <p className="text-xs sm:text-sm font-bold text-slate-500 uppercase tracking-widest">
+            Trusted by 30K+ brands and 1M+ partners worldwide
           </p>
         </div>
         <div className="relative w-full overflow-hidden flex py-1">
-          <div className="flex animate-marquee-loop w-max shrink-0 text-slate-400 font-extrabold text-lg sm:text-xl uppercase tracking-widest select-none">
+          <div className="flex animate-marquee-loop w-max shrink-0 text-slate-600 font-extrabold text-lg sm:text-xl uppercase tracking-widest select-none">
             {/* Set 1 */}
-            <span className="flex items-center gap-2 pr-20 shrink-0"><span className="text-blue-600/40">✦</span> Apple Store</span>
-            <span className="flex items-center gap-2 pr-20 shrink-0"><span className="text-blue-600/40">✦</span> Nike Direct</span>
-            <span className="flex items-center gap-2 pr-20 shrink-0"><span className="text-blue-600/40">✦</span> Spotify Premium</span>
-            <span className="flex items-center gap-2 pr-20 shrink-0"><span className="text-blue-600/40">✦</span> Adobe Cloud</span>
-            <span className="flex items-center gap-2 pr-20 shrink-0"><span className="text-blue-600/40">✦</span> Amazon Affiliate</span>
-            <span className="flex items-center gap-2 pr-20 shrink-0"><span className="text-blue-600/40">✦</span> Sephora Brands</span>
-            <span className="flex items-center gap-2 pr-20 shrink-0"><span className="text-blue-600/40">✦</span> Samsung Electronics</span>
-            
-            {/* Set 2 */}
-            <span className="flex items-center gap-2 pr-20 shrink-0"><span className="text-blue-600/40">✦</span> Apple Store</span>
-            <span className="flex items-center gap-2 pr-20 shrink-0"><span className="text-blue-600/40">✦</span> Nike Direct</span>
-            <span className="flex items-center gap-2 pr-20 shrink-0"><span className="text-blue-600/40">✦</span> Spotify Premium</span>
-            <span className="flex items-center gap-2 pr-20 shrink-0"><span className="text-blue-600/40">✦</span> Adobe Cloud</span>
-            <span className="flex items-center gap-2 pr-20 shrink-0"><span className="text-blue-600/40">✦</span> Amazon Affiliate</span>
-            <span className="flex items-center gap-2 pr-20 shrink-0"><span className="text-blue-600/40">✦</span> Sephora Brands</span>
-            <span className="flex items-center gap-2 pr-20 shrink-0"><span className="text-blue-600/40">✦</span> Samsung Electronics</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Aviya Mattress</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Hume Health</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Jackery</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Sol De Janeiro</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Tymo Beauty</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Ape Born Fitness</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Red Magic</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Pulsetto</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Laifen</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Anta</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Foxy Locks</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Ulike</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Tenways</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Ugreen</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Bluetti</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Ritfit</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Pooch and Mutt</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Xlaserlab</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Aidous</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Akko</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Lit Farms</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Ihoverboard</span>
+
+            {/* Set 2 (Duplicated for seamless loop) */}
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Aviya Mattress</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Hume Health</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Jackery</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Sol De Janeiro</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Tymo Beauty</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Ape Born Fitness</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Red Magic</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Pulsetto</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Laifen</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Anta</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Foxy Locks</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Ulike</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Tenways</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Ugreen</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Bluetti</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Ritfit</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Pooch and Mutt</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Xlaserlab</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Aidous</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Akko</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Lit Farms</span>
+            <span className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors duration-300 cursor-pointer pr-16 shrink-0"><span className="text-blue-600/40">✦</span> Ihoverboard</span>
           </div>
         </div>
         <style jsx>{`
           .animate-marquee-loop {
             display: flex;
             width: max-content;
-            animation: marquee 35s linear infinite;
+            animation: marquee 45s linear infinite;
           }
           @keyframes marquee {
             0% { transform: translate3d(0, 0, 0); }
